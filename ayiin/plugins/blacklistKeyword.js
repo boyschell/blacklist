@@ -50,7 +50,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const bot_1 = __importStar(require("../bot"));
 const blacklistKeyword_1 = require("../database/blacklistKeyword");
-bot_1.default.command('addbl', (ayiin) => __awaiter(void 0, void 0, void 0, function* () {
+bot_1.default.command('bl', (ayiin) => __awaiter(void 0, void 0, void 0, function* () {
     const { message } = ayiin;
     const admin = yield ayiin.getChatMember(message.from.id);
     const arg = ayiin.args;
@@ -117,6 +117,6 @@ bot_1.default.command('delbl', (ayiin) => __awaiter(void 0, void 0, void 0, func
         return yield ayiin.sendMessage('Perintah ini hanya untuk admin dan owner group.');
     }
 }));
-(0, bot_1.addHelp)('/addbl keyword|reply', 'Untuk menambahkan kata kunci daftar hitam');
+(0, bot_1.addHelp)('/bl keyword|reply', 'Untuk menambahkan kata kunci daftar hitam');
 (0, bot_1.addHelp)('/getbl', 'Untuk melihat kata kunci daftar hitam');
 (0, bot_1.addHelp)('/delbl keyword|reply', 'Untuk Menghapus kata kunci daftar hitam');
