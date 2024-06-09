@@ -74,11 +74,11 @@ bot_1.default.command('start', (ayiin) => __awaiter(void 0, void 0, void 0, func
                 [
                     {
                         text: 'Support',
-                        url: 'https://t.me/AyiinChats'
+                        url: 'https://t.me/chellsupportbot'
                     },
                     {
-                        text: 'Update',
-                        url: 'https://t.me/AyiinChannel'
+                        text: 'Store',
+                        url: 'https://t.me/mmk_store'
                     },
                 ]
             ]
